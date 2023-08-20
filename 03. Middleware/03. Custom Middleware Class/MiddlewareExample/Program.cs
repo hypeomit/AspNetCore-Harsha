@@ -1,7 +1,7 @@
 using MiddlewareExample.CustomMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddTransient<MyCustomMiddleware>();
+builder.Services.AddTransient<MyCustomMiddleware>();//Injecting Custom middleware 
 var app = builder.Build();
 
 
